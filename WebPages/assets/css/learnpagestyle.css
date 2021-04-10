@@ -1,0 +1,40 @@
+h2 {
+    margin-bottom: 0px;
+    color: #258;
+}
+
+p {
+    text-indent: 25px; 
+}
+
+/*h5 {
+    color: lightblue;
+}*/
+
+li {
+    text-indent: 25px;
+}
+
+.learn-page-img {
+    width: 500px;
+    height: 500px;
+    float: right; 
+    margin: 65px 200px 200px 0px;
+}
+
+.learn-page-img2 {
+    width: 500px;
+    height: 500px;
+    float: right; 
+    margin: 0px 200px 200px 0px;
+}
+
+h1 {
+    text-align: left;
+    font-size: 40px;
+    color: #258;
+}
+
+/*body {
+    background-color: burlywood;
+}*/
