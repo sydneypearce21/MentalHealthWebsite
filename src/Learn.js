@@ -1,35 +1,9 @@
-<!--Sydney-->
-<!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset = "utf-8">
-        <title>Learn</title>
 
-        <!--Favicons-->
-        <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" type="image/x-icon">
+export default function Learn() {
+  return (
+    <div className="Resources">
 
-        <!--Stylesheets-->
-        <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
-        <link rel="stylesheet" href="./assets/css/learnpagestyle.css">
-        <!--JavaScripts-->
-
-    </head>
-    <body>
-        <div class="header">
-            <a href="HomePage.html">
-                <img class="logo" alt="MindfulMentors" src="./assets/images/MindfulMentors.jpg">
-            </a>
-            <div class="header-right">
-                <a class="menu-item" href="HomePage.html">Home</a>
-                <a class="menu-item" href="learnpage.html">Learn</a>
-                <a class="menu-item" href="Activities.html">Activities</a>
-                <a class="menu-item" href="Resources.html">Resources</a>
-                <a class="active" href="#home">Sign-In</a>
-              </div> 
-        </div>
-
-        <img class="learn-page-img" src="./assets/images/learnPagePic.png" alt="Mental Illness">
-        <h1><strong>Learn About Mental Illness</strong></h1><br>
+        <h1><strong>Learn About Mental Illness</strong></h1><br />
         <h2><b>Mental Illness Types</b></h2>
 
         <h3>Anxiety Disorders</h3>
@@ -71,10 +45,9 @@
         <p>People who experienced a traumatic event, that have lasting frightening thoughts</p>
 
 
-        <hr>
+        <hr/>
 
         <h2><b>Covid-19 Impacts On Mental Illness</b></h2>
-        <img class="learn-page-img2" src="./assets/images/learnPagePic2.jpg" alt="Mental Illness">
 
         <h3>Warning Signs</h3>
         
@@ -100,11 +73,6 @@
             a phone call or outdoor activity. Don't forget to help others along the way, so we can all getting through
             the difficult times together!
         </p>
-    </body>
-    <footer>
-        <p>COSC 484 - Web-Based Programming - Group 7<br>
-            Sam Bishop, Hanna Chang, Sydney Pearce, Ella Miller, Matt Saxton, Aayush Karel<br><br>
-            <img src="assets/images/favicon/favicon-16x16.png">
-        </p>
-    </footer>
-</html>
+    </div>
+  );
+}

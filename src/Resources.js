@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html lang ='en'>
-<head>
-    <meta charset="utf-8">
-    <h1><center>Resources</center></h1>
-    <!-- insert image here-->
-    <!-- add js styling here-->
-</head>
 
-<body>
-
-    <div class="National Suicide Prevention Line">
+export default function Resources() {
+  return (
+    <div className="Resources">
+        <div class="National Suicide Prevention Line">
         <h2>National Suicide Prevention Line</h2>
         <p>The National Suicide Prevention Lifeline is a suicide prevention network that provides 24/7 services for anyone in suicidal crisis or emotional distress. This number can be reached at <a href="tel:18002738255">1-800-273-8255</a></p>
-        <!--this number should call onclick-->
-    </div>
+    </div> 
     
     <div class="Substance Abuse and Mental Health Services Administration (SAMSHA) National Helpline">
         <h2>Substance Abuse and Mental Health Services Administration (SAMSHA) National Helpline</h2>
@@ -29,5 +21,6 @@
         <h2>National Alliance on Mental Health (NAMI) Helpline</h2>
         <p>The NAMI Helpline is a free nationwide support service that provides information, resource referrals, and support for those who have mental conditions. This helpline can be reached at <a href="tel:18009506264">1-800-950-NAMI (6264)</a> Monday through Friday from 10AM to 6PM, ET</p>
     </div>
-
-</body>
+    </div>
+  );
+}
