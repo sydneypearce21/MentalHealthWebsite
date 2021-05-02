@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom' ;
+import { Container } from 'reactstrap';
 
 import {
   Collapse,
@@ -22,21 +23,35 @@ const Header = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">Mindful Mentors</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-            <NavItem><Link className="nav-link" to="/" activeClassName="active">Home</Link></NavItem>
-            <NavItem><Link className="nav-link" to="/learn" activeClassName="active">Learn</Link></NavItem>
-            <NavItem><Link className="nav-link" to="/activities" activeClassName="active">Activities </Link></NavItem>
-            <NavItem><Link className="nav-link" to="/resources" activeClassName="active">Resourcces</Link></NavItem>
-            <NavItem><Link className="nav-link" to="#" activeClassName="active">Sign-In</Link></NavItem>
-          </Nav>
-        </Collapse>
+        <Container>
+            <NavbarBrand href="/">Mindful Mentors</NavbarBrand>
+            <NavbarToggler onClick={toggle} />
+            <Collapse isOpen={isOpen} navbar>
+            <Nav className="mr-auto" navbar>
+                <NavItem><Link className="nav-link" to="/" activeClassName="active">Home</Link></NavItem>
+                <NavItem><Link className="nav-link" to="/learn" activeClassName="active">Learn</Link></NavItem>
+                <NavItem><Link className="nav-link" to="/activities" activeClassName="active">Activities </Link></NavItem>
+                <NavItem><Link className="nav-link" to="/resources" activeClassName="active">Resources</Link></NavItem>
+                <UncontrolledDropdown nav inNavbar>
+                    <DropdownToggle nav caret>
+                        Account
+                    </DropdownToggle>
+                    <DropdownMenu right>
+                        <DropdownItem>
+                            <Link className="nav-link" to="/login" activeClassName="active">Log In</Link>
+                        </DropdownItem>
+                        <DropdownItem>
+                            <Link className="nav-link" to="/register" activeClassName="active">Register</Link>
+                        </DropdownItem>
+                    </DropdownMenu>
+                </UncontrolledDropdown>
+            
+            </Nav>
+            </Collapse>
+        </Container>
       </Navbar>
-    </div>
+    
   );
 }
 

@@ -3,7 +3,7 @@ import activities from './Images/Activities.jpg';
 export default () => (
 
     <div className="Activities">
-    <img src={activities} alt="Helpful Activities to try" />
+    <img src={activities} alt="Helpful Activities to try" className="featured-image" />
     <h2>Recovery won’t happen overnight, but here are some daily exercises and tips to become more mindful of yourself
         and lead to overall improved mental health.</h2>
     <h1><strong>Ways to be more productive</strong></h1>

@@ -5,9 +5,12 @@ import Home from './Home';
 import Activities from './Activities';
 import Learn from './Learn';
 import Resources from './Resources';
+import Register from './Register';
+import Login from './Login';
 import reportWebVitals from './reportWebVitals';
 import Header from './Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container } from 'reactstrap';
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,20 +22,31 @@ ReactDOM.render(
 
     <Router>
       <Header />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/learn">
-          <Learn />
-        </Route>
-        <Route exact path="/activities">
-          <Activities />
-        </Route>
-        <Route exact path="/resources">
-          <Resources />
-        </Route>
-      </Switch>
+      <Container>
+
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/learn">
+            <Learn />
+          </Route>
+          <Route exact path="/activities">
+            <Activities />
+          </Route>
+          <Route exact path="/resources">
+            <Resources />
+          </Route>
+          <Route exact path="/login">
+            <Login />
+          </Route>
+          <Route exact path="/register">
+            <Register />
+          </Route>
+        </Switch>
+      </Container>
+
+
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

@@ -1,8 +1,10 @@
-
+import learn from './Images/learn.png';
 export default function Learn() {
   return (
     <div className="Resources">
 
+        <div><img src={learn} alt="Learn Logo" className="featured-image learn-image" /></div>
+        
         <h1><strong>Learn About Mental Illness</strong></h1><br />
         <h2><b>Mental Illness Types</b></h2>
 
