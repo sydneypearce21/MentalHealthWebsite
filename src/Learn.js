@@ -1,4 +1,7 @@
 import learn from './Images/learn.png';
+import skyedit from './Images/skyedit.jpg';
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 export default function Learn() {
   return (
     <div className="Resources">
@@ -6,8 +9,12 @@ export default function Learn() {
         <div><img src={learn} alt="Learn Logo" className="featured-image learn-image" /></div>
         
         <h1><strong>Learn About Mental Illness</strong></h1><br />
+
+        <div style={{backgroundImage:`url(${skyedit})`, backgroundSize: '100%'}}>
         <h2><b>Mental Illness Types</b></h2>
 
+        <Carousel autoPlay infiniteLoop interval="8000" transitionTime="2000">
+        <div style={{ textAlign: 'left'}} >
         <h3>Anxiety Disorders</h3>
         <p>People with anxiety disorders tend to repond to siutations with fear and dread</p>
         <u1>
@@ -16,6 +23,9 @@ export default function Learn() {
             <li>Social Anxiety</li>
             <li>Specific Phobias</li>
         </u1>
+        </div>
+
+        <div style={{ textAlign: 'left'}} >
         <h3>Mood Disorders</h3>
         <p>People with persistent feelings of sadness or feeling overly happy</p>
         <u1>
@@ -23,6 +33,9 @@ export default function Learn() {
             <li>Bipolar Disorder</li>
             <li>Cyclothymic Disorder</li>
         </u1>
+        </div>
+
+        <div style={{ textAlign: 'left'}} >
         <h3>Psychotic Disorders</h3>
         <p>People with distorted awareness and thinking</p>
         <ul>
@@ -30,6 +43,9 @@ export default function Learn() {
             <li>Delusions</li>
             <li>Schizophrenia</li>
         </ul>
+        </div>
+
+        <div style={{ textAlign: 'left'}} >
         <h3>Eating Disorders</h3>
         <p>People with extreme emotions/behaviors about weight and food</p>
         <ul>
@@ -37,6 +53,9 @@ export default function Learn() {
             <li>Bulimia Nervosa</li>
             <li>Binge Eating</li>
         </ul>
+        </div>
+
+        <div style={{ textAlign: 'left'}} >
         <h3>OCD</h3>
         <p>People with constant thoughts or fears causing them to perform certain routines</p>
         <ul>
@@ -45,7 +64,9 @@ export default function Learn() {
         </ul>
         <h3>PTSD</h3>
         <p>People who experienced a traumatic event, that have lasting frightening thoughts</p>
-
+        </div>
+        </Carousel>
+        </div>
 
         <hr/>
 
