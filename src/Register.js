@@ -2,6 +2,46 @@ import {useState} from 'react';
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 const axios = require('axios').default;
 
+/*class Register extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      user: [],
+        username: "",
+        email: "",
+        password: ""
+    };
+  }
+
+// when component mounts, first thing it does is fetch all existing data in our db
+// then we incorporate a polling logic so that we can easily see if our db has
+// changed and implement those changes into our UI
+componentDidMount() {
+  this.getDataFromDb();
+}
+
+// never let a process live forever
+// always kill a process everytime we are done using it
+componentWillUnmount() {
+  if (this.state.intervalIsSet) {
+    clearInterval(this.state.intervalIsSet);
+    this.setState({ intervalIsSet: null });
+  }
+}
+
+getDataFromDb = () => {
+  fetch('http://localhost:9000/testDB')
+    .then((user) => user.json())
+    .then((res) => this.setState({ user: res.user }));
+};
+
+putDataToDB = (username, email, password) => {
+  axios.post('http://localhost:9000/testDB', {
+    username: username,
+    email: email,
+    password: password,
+  });
+};*/
 
 const initialFormData = Object.freeze({
   email: "",
